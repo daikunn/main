@@ -1,0 +1,58 @@
+body{
+    min-height: 100vh;
+    display:grid;
+    grid-template:
+    "header header header"150px
+    "...... ...... ......"32px
+    "...... main   ......"auto
+    "...... ...... ......"32px
+    "footer footer footer"50px
+    /20px   auto   20px;
+}
+@media(min-width: 840px){
+    body{
+        grid-template:
+    "header header header"150px
+    "...... ...... ......"64px
+    "...... main   ......"auto
+    "...... ...... ......"64px
+    "footer footer footer"50px
+    /auto   800px  auto;
+    }
+}
+header {
+    grid-area: header;
+    background-color:rgb(4, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 3em;
+    color:#ffffff;
+}
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: dimgrey;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+}
+h1{
+    border-bottom: 2px solid #0421f9db;
+}
+h2{
+    margin-top: 15px;
+    border-bottom: 2px solid#0421f9db;
+}
+p{
+    margin-top: 16px;
+}
