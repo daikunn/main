@@ -33,6 +33,10 @@ header {
     font-size: 3em;
     color:#ffffff;
 }
+header a {
+    color: #ffffff;
+   text-decoration: none; 
+}
 main {
     grid-area: main;
 }
